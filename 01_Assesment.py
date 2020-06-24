@@ -24,6 +24,7 @@ def intcheck(question, low, high):
 
 keep_going = ""
 while keep_going == "":
-    how_much = intcheck("how many questions would you like to answer ", 1, 10)
+    how_much = intcheck("how many questions would you like to answer? ", 1, 10)
     print("You have chosen to answer {} questions".format(how_much))
 
+    keep_going = input("Please wait for your Questions to generate")

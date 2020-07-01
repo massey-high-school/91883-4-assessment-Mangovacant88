@@ -22,5 +22,3 @@ def intcheck(question, low, high):
 
 # main routine goes here
 
-how_much = intcheck("how many questions would you like to answer? ", 1, 10)
-print("You have chosen to answer {} questions".format(how_much))

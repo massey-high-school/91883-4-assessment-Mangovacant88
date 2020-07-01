@@ -1,3 +1,4 @@
+import random
 
 # Number checker function goes here
 def intcheck(question, low, high):
@@ -14,41 +15,26 @@ def intcheck(question, low, high):
         except ValueError:
             print(error)
 
-# main routine goes here
-
-how_much = intcheck("how many questions would you like to answer? ", 1, 10)
-print("You have chosen to answer {} questions".format(how_much))
-
-
 # import random numbers
-
-import random
 
 low = 0
 high = 50
+guess = ""
 
 
 NuQuestion = random.randint(low, high)
-print(NuQuestion)
+# print(NuQuestion)
 NuQuestion02 = random.randint(low, high)
-print(NuQuestion, NuQuestion02, end="\t")
+# print(NuQuestion, NuQuestion02, end="\t")
 
 question = "{} + {}".format(NuQuestion, NuQuestion02)
 print(question)
 
-# import random numbers
+Answer = NuQuestion + NuQuestion02
 
-import random
+guess = int(input("Enter the answer here:"))
 
-low = 0
-high = 50
-
-for item in range(1, 2):
-    NuQuestion = random.randint(low, high)
-    NuQuestion02 = random.randint(low, high)
-
-    question = "{} + {}".format(NuQuestion, NuQuestion02)
-    answer = NuQuestion + NuQuestion02
-
-    question = input("Enter the answer here:")
-
+if guess == Answer:
+    print("correct!")
+else:
+    print("You got it wrong")

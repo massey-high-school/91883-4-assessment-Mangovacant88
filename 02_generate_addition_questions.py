@@ -19,7 +19,6 @@ print(NuQuestion, NuQuestion02, end="\t")
 question = "{} + {}".format(NuQuestion, NuQuestion02)
 print(question)
 
-
-
+guess = int(input("Enter the answer here:"))
 
 

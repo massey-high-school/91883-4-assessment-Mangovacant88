@@ -21,11 +21,10 @@ for item in range (1,2):
     answer = NuQuestion + NuQuestion02
 
 
-    guess = int(input("Enter the answer here:")
+    guess = int(input("Enter the answer here:"))
 
     if guess - Answer:
-        print("Wrong")
+        print("correct!")
     else:
-        print("Nice you got it correct!")
-
+        print("You got it wrong")
 

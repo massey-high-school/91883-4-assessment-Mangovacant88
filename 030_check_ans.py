@@ -6,25 +6,27 @@
 # import random numbers
 
 import random
+# import random numbers
 
+# variables
 low = 0
-high = 50
-Answer = (low + high)
+high =  50
 guess = ""
 
-for item in range (1,2):
-    NuQuestion = random.randint(low, high)
-    NuQuestion02 = random.randint(low, high)
 
+NuQuestion = random.randint(low, high)
+# print(NuQuestion)
+NuQuestion02 = random.randint(low, high)
+# print(NuQuestion, NuQuestion02, end="\t")
 
-    question = "{} + {}".format(NuQuestion, NuQuestion02)
-    answer = NuQuestion + NuQuestion02
+question = "{} + {}".format(NuQuestion, NuQuestion02)
+print(question)
 
+Answer = NuQuestion + NuQuestion02
 
-    guess = int(input("Enter the answer here:"))
+guess = int(input("Enter the answer here:"))
 
-    if guess - Answer:
-        print("correct!")
-    else:
-        print("You got it wrong")
-
+if guess == Answer:
+    print("nice my bro you got it correct!!")
+else:
+    print("bruhh you got it wrong you needa work on your addition questions")

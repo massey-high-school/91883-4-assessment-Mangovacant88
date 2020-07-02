@@ -4,8 +4,6 @@ print("welcome to the Amazing Addition Quiz")
 print("************************************")
 print()
 
-import random
-
 # Number checker function goes here
 def int_check(question, low, high):
     valid = False
@@ -25,23 +23,27 @@ def int_check(question, low, high):
 # import random numbers
 
 # variables
+import random
+
 low = 0
 high =  100
 
+for item in range(1, 10):
+    question2 = random.randint(low, high)
 
-NuQuestion = random.randint(low, high)
-# print(NuQuestion)
-NuQuestion02 = random.randint(low, high)
-# print(NuQuestion, NuQuestion02, end="\t")
+    NuQuestion = random.randint(low, high)
+    # print(NuQuestion)
+    NuQuestion02 = random.randint(low, high)
+    # print(NuQuestion, NuQuestion02, end="\t")
 
-question = "{} + {}".format(NuQuestion, NuQuestion02)
-print(question)
+    question = "{} + {}".format(NuQuestion, NuQuestion02)
+    print(question)
 
-Answer = NuQuestion + NuQuestion02
+    Answer = NuQuestion + NuQuestion02
 
-guess = int_check("Enter the answer here:", low, high)
+    guess = int_check("Enter the answer here:", low, high)
 
-if guess == Answer:
-    print("nice you got it correct!!")
-else:
-    print("sorry you got it wrong")
+    if guess == Answer:
+        print("nice you got it correct!!")
+    else:
+        print("sorry you got it wrong")

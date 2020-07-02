@@ -3,7 +3,6 @@
 # To Do
 # generate addition question
 # generate 2 numbers for each question
-# check number is between 0 and 50
 
 # Number checker function goes here
 def intcheck(question, low, high):
@@ -21,4 +20,3 @@ def intcheck(question, low, high):
             print(error)
 
 # main routine goes here
-

@@ -1,15 +1,9 @@
-print()
-print("************************************")
-print("welcome to the Amazing Addition Quiz")
-print("************************************")
-print()
-
 import random
 
-# Number checker function goes here
-def int_check(question, low, high):
+# number checking function goes here
+def intcheck(question, low, high):
     valid = False
-    error = "Error, please put in something between {} and {}".format(low, high,)
+    error = "oops, please put in a number between {} and {}".format(low, high,)
     while not valid:
         try:
             response = int(input(question))
@@ -20,13 +14,17 @@ def int_check(question, low, high):
                 print()
         except ValueError:
             print(error)
-# main routine
+
+# Main routine goes here
+
+
 
 # import random numbers
 
 # variables
 low = 0
-high =  100
+high =  50
+guess = ""
 
 
 NuQuestion = random.randint(low, high)
@@ -39,9 +37,9 @@ print(question)
 
 Answer = NuQuestion + NuQuestion02
 
-guess = int_check("Enter the answer here:", low, high)
+guess = int(input("Enter the answer here:"))
 
 if guess == Answer:
-    print("nice you got it correct!!")
+    print("nice my bro you got it correct!!")
 else:
-    print("sorry you got it wrong")
+    print("bruhh you got it wrong you needa work on your addition questions")

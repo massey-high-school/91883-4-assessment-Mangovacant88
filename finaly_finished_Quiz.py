@@ -61,7 +61,6 @@ result = ""
 game_history = []
 
 print()
-print("*****The best game ever*****")
 print("Type in 'correct' if you got it correct, or anything else if you got it wrong")
 print()
 
@@ -76,17 +75,18 @@ for item in range(1, how_many_questions + 1):
         feedback = "Sorry you got it wrong"
         wrong += 1
 
-    round_result = "Round {}: {}".format(item, feedback)
+    round_result = "Question {}: {}".format(item, feedback)
     game_history.append(round_result)
 
 print()
 print("***** Results *****")
 
-for item in game_history:
-    print(item)
+print(game_history)
 
 print()
 print("**********************************************")
 print("Thanks for answering The Amazing Addition Quiz")
 print("**********************************************")
 print()
+
+
